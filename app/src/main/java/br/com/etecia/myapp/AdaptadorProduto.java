@@ -32,6 +32,9 @@ public abstract class AdaptadorProduto extends RecyclerView.Adapter<AdaptadorPro
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.idtituloproduto.setText(nossalistaProdutos.get(position).getTitulo());
+        holder.idmodimagemproduto.setImageResource(nossalistaProdutos.get(position).getImagem());
+        holder.cardProduto.setOnClickListener(new );
 
     }
 
